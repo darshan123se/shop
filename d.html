@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping City</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#f4f6fb;color:#333}
+
+header{background:linear-gradient(90deg,#ff4d6d,#ff9f1c);padding:15px 20px;display:flex;justify-content:space-between;align-items:center;color:white}
+header h1{font-size:22px}
+nav a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
+
+.hero{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f');background-size:cover;background-position:center;height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:20px}
+.hero h2{font-size:36px;margin-bottom:10px}
+.hero p{margin-bottom:20px}
+.btn{background:#ff4d6d;color:white;border:none;padding:12px 25px;border-radius:6px;font-size:16px}
+
+section{padding:40px 20px}
+section h2{text-align:center;margin-bottom:20px}
+
+.categories{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.cat{background:white;padding:20px;border-radius:10px;text-align:center;box-shadow:0 5px 10px rgba(0,0,0,0.08)}
+
+.products{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.product{background:white;border-radius:10px;box-shadow:0 5px 10px rgba(0,0,0,0.08);padding:15px;text-align:center}
+.product img{width:100%;border-radius:8px}
+.product h4{margin:10px 0}
+.price{color:#ff4d6d;font-weight:bold}
+
+.features{display:grid;grid-template-columns:1fr;gap:15px}
+.feature{background:white;padding:20px;border-radius:10px;text-align:center}
+
+.contact{background:#fff;border-radius:10px;padding:20px;box-shadow:0 5px 10px rgba(0,0,0,0.08)}
+
+footer{background:#222;color:white;text-align:center;padding:15px;margin-top:30px}
+
+@media(min-width:768px){
+.hero h2{font-size:48px}
+.categories{grid-template-columns:repeat(4,1fr)}
+.products{grid-template-columns:repeat(4,1fr)}
+.features{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Shopping City</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#offers">Offers</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Your Favourite Online Store</h2>
+<p>Fashion • Electronics • Lifestyle</p>
+<button class="btn">Shop Now</button>
+</div>
+</section>
+
+<section>
+<h2>Shop by Category</h2>
+<div class="categories">
+<div class="cat">👕 Fashion</div>
+<div class="cat">📱 Electronics</div>
+<div class="cat">👟 Shoes</div>
+<div class="cat">🏠 Home</div>
+</div>
+</section>
+
+<section id="products">
+<h2>Trending Products</h2>
+<div class="products">
+<div class="product">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+<h4>Smart Watch</h4>
+<p class="price">₹1999</p>
+<button class="btn">Buy</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+<h4>Headphones</h4>
+<p class="price">₹1499</p>
+<button class="btn">Buy</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+<h4>Fashion Jacket</h4>
+<p class="price">₹2499</p>
+<button class="btn">Buy</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+<h4>Sports Shoes</h4>
+<p class="price">₹2999</p>
+<button class="btn">Buy</button>
+</div>
+</div>
+</section>
+
+<section id="offers">
+<h2>Why Shop With Us</h2>
+<div class="features">
+<div class="feature">🚚 Fast Delivery</div>
+<div class="feature">💳 Secure Payments</div>
+<div class="feature">⭐ Trusted Store</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<p>📞 Darshan – 6363740734</p>
+<p>📧 shoppingcity@email.com</p>
+<p>🌐 Demo Website for Business Clients</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Shopping City Demo Website</p>
+</footer>
+
+</body>
+</html>
